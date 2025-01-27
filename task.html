@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Loading Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .image {
+      margin-bottom: 20px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .image img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Performance Test: Lazy Loading Images</h1>
+    <div class="image">
+      <img src="https://images.pexels.com/photos/30319081/pexels-photo-30319081/free-photo-of-urban-garage-entrance-with-shadowy-tree.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 1" loading="lazy">
+    </div>
+    <div class="image">
+      <img src="https://images.pexels.com/photos/28539583/pexels-photo-28539583/free-photo-of-majestic-mountain-peaks-at-sunrise.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 2" loading="lazy">
+    </div>
+    <div class="image">
+      <img src="https://images.pexels.com/photos/30165563/pexels-photo-30165563/free-photo-of-majestic-mountain-silhouette-at-purple-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 3" loading="lazy">
+    </div>
+    <div class="image">
+      <img src="https://images.pexels.com/photos/29969374/pexels-photo-29969374/free-photo-of-vibrant-sunset-over-lake-ontario-in-toronto.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 4" loading="lazy">
+    </div>
+    <div class="image">
+      <img src="https://images.pexels.com/photos/30299804/pexels-photo-30299804/free-photo-of-dramatic-forest-silhouette-at-vibrant-sunset.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image 5" loading="lazy">
+    </div>
+  </div>
+</body>
+</html>
